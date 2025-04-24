@@ -1,0 +1,83 @@
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe6e9;
+    font-family: "Quicksand", sans-serif;
+    min-height: 100vh;
+    /* usar toda a tela */
+    margin: 0;
+    /* tira a margem do body*/
+}
+
+.envelope{
+    background-color: #ffabcb;
+    border: #fa5ea7 2px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.ponta-envelope{
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-top: 100px solid #ff89a9;
+    transform-origin: top center;
+    transition: transform 0.6s ease;
+}
+
+.ponta-envelope.aberta{
+    transform: rotateX(-180deg);
+}
+
+.carta{
+    visibility: hidden;
+    background-color: #fff2d5;
+    margin-top: -60px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 
+    opacity 0.6s ease,
+    transform 0.6s ease;
+    position: relative;
+    border-radius: 20px;
+    pointer-events: none;/*impede que a carta seja clicável*/
+    
+}
+
+.carta.visivel{
+    visibility: visible;
+    transform: translate(0);
+    background-color: #fdf8dc;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.escrita{
+    margin: 20px;
+   padding: 8px 8px;
+   font-family: "satisfy";
+   line-height: 0.9;
+   font-size: 18px;
+}
+
+.p{
+    margin:0;
+    display: flex;
+    text-align: right;
+    font-family: "satisfy";
+    font-size: 20px;
+}
+
+
+
+header{
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
