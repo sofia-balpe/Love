@@ -81,3 +81,21 @@ header{
     margin-top: 30px;
     margin-bottom: -10px;
 }
+.btnVoltar{
+    position: absolute; /* ou use 'fixed' se quiser que o botão fique sempre visível */
+    top: 10px;
+    left: 10px;
+    padding: 12px 20px;
+    background-color: #ff6bb0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: "Satisfy", cursive;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(255, 107, 129, 0.5);
+    transition: 0.3s ease;
+}
+.btnVoltar:hover{
+    box-shadow: 0px 0px 8px rgb(255, 86, 112);
+}

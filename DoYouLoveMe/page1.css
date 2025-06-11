@@ -14,13 +14,9 @@
 
 .divVoceMeAma {
     display: flex;
-    /* Flexbox para alinhar os itens lado a lado */
     justify-content: center;
-    /* Centraliza os itens no eixo horizontal */
     align-items: center;
-    /* Alinha os itens no eixo vertical */
     flex-direction: column;
-    /* Organiza os itens de forma empilhada (imagem em cima e texto abaixo) */
     text-align: center;
     padding: 10px;
 }

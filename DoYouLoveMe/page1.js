@@ -45,6 +45,14 @@ imageCenter.addEventListener("click", ()=>{
       imagemAtual = 3;
     }
     else if( imagemAtual === 3){
+      imageCenter.src = '../images/youAndMe4.jpg';
+      imagemAtual = 4;
+    }
+    else if(imagemAtual === 4){
+      imageCenter.src = '../images/youAndMe5.jpg';
+      imagemAtual = 5;
+    }
+    else if (imagemAtual === 5){
       imageCenter.src = '../images/youAndMe.jpg';
       imagemAtual = 1;
     }
